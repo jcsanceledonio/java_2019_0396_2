@@ -29,6 +29,7 @@ h2 {
 
 .tabla {
     background-color: white;
+    text-align: center;
 }
 
 table {
@@ -36,16 +37,15 @@ table {
     margin: auto;
 }
 
-/* table caption{
-
-} */
+table caption {
+    font-size: 2em;
+}
 
 td {
     width: 50%;
     height: 30px;
     border: 1px solid #000;
     border-radius: 5px;
-    text-align: center;
 }
 
 td:hover {
@@ -91,7 +91,7 @@ nav li a, .dropbtn {
 }
 
 nav li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: rgb(0, 60, 255);
 }
 
 nav li.dropdown {
