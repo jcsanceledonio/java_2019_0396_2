@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- la base para contruir todas las rutas de esta pagina -->
+    <base href="/PruebaTecnica/">
+
+</head>
+
+<body>
+
+    <style>
+        body {
+            padding: 80px;
+        }
+
+        span {
+            border: 3px dotted red;
+            padding: 5px;
+        }
+
+        p {
+            border: 3px solid blueviolet;
+            padding: 5px;
+        }
+
+        p.prueba {
+            color: teal;
+            border: 5px solid green;
+            margin: 10px;
+            /* padding: 20px;  */
+            padding: 20px 40px;
+        }
+
+        .box {
+            display: inline-block;
+            /* para que el bloque ocupe el borde que especifiquemos
+            sin que se le sume los 2px de los bordes */
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+
+            border: 2px solid teal;
+            background-color: royalblue;
+            border-radius: 10px;
+
+            color: #fff;
+            font-size: 5em;
+            text-align: center;
+        }
+
+        section {
+            border: 1px solid rgb(131, 131, 131);
+            background-color: ghostwhite;
+            padding: 10px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+
+            -webkit-box-shadow: 8px 6px 6px -1px rgba(0, 0, 0, 0.27);
+            -moz-box-shadow: 8px 6px 6px -1px rgba(0, 0, 0, 0.27);
+            box-shadow: 8px 6px 6px -1px rgba(0, 0, 0, 0.27);
+        }
+    </style>
+
+
+    <h1>Toda etiqueta de HTML tiene una estructura de caja</h1>
+
+    <section>
+        <h2>Display</h2>
+        <a href="index.html">Volver</a>
+
+        <p class="prueba">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias earum accusantium labore
+            voluptatem modi nemo eos
+            quasi, consequatur rem porro ipsa cumque dignissimos minima repudiandae, incidunt, eligendi quas magnam
+            voluptatum?</p>
+
+        <h3>Elementos en linea o bloque</h3>
+        <p><code>display</code>Es el atributo para gestionar si es linea o bloque (existen mas displays ej flex)</p>
+        <p>*trick: usar inspector para verlo</p>
+        <dl>
+            <dt>block</dt>
+            <dd>elemento que ocupa todo el ancho del elemento padre</dd>
+
+            <dt>inline</dt>
+            <dd>elemento que ocupa todo lo que tenga su contenido</dd>
+
+            <dt>inline-block</dt>
+            <dd>Es una mezcla entre las dos</dd>
+
+        </dl>
+
+        <p> <span> Lorem ipsum dolor </span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tenetur
+            fuga
+            corrupti, dignissimos molestias sit
+            consectetur ad, quod reprehenderit unde porro nam odit recusandae similique eum animi vero voluptatem
+            deserunt.
+        </p>
+
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </section>
+
+    <section>
+        <h2>Overflow</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit ullam incidunt blanditiis in maxime ea
+            atque
+            distinctio omnis molestias officia rerum, quia aliquam, quasi magni possimus nihil repudiandae?
+            Consequuntur.
+        </p>
+    </section>
+
+
+</body>
+
+</html>

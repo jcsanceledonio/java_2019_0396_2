@@ -6,23 +6,15 @@ esto es un comentario de bloque
 @tags: css, basic, etc...
 @licencia mit
  */
-*{
+
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 
-html{
-    height: 100%;
-    overflow: hidden;
- }
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    perspective:1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -30,41 +22,103 @@ h1 {
     font-size: 3em;
     text-align: center;
 }
-h2{
+
+h2 {
     text-align: center;
 }
 
-.tabla{
-    background-color:white;
+.tabla {
+    background-color: white;
 }
+
 table {
     width: 50%;
     margin: auto;
 }
+
+/* table caption{
+
+} */
+
 td {
     width: 50%;
+    height: 30px;
     border: 1px solid #000;
+    border-radius: 5px;
     text-align: center;
 }
+
 td:hover {
-    background-color: pink;
+    background-color: rgb(24, 123, 236);
 }
 
-.parallax{
-    background-image: url(/images/office.jpg);
+.parallax {
+    background-image: url(/PruebaTecnica/images/office.jpg);
     /* Create the parallax scrolling effect */
     height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-.parallax h1{
+.parallax h1 {
     padding-top: 3em;
 }
 
-.parallax h2{
+.parallax h2 {
     padding-top: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

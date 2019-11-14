@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Titul pestaña</title>
+
+    <base href="/PruebaTecnica/">
     <!-- estilos -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -13,16 +15,46 @@
 
 <body>
 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">CSS</a>
+                    <div class="dropdown-content">
+                        <a href="ejemplos/css/animaciones.html">Animaciones</a>
+                        <a href="ejemplos/css/basico.html">Basico</a>
+                        <a href="ejemplos/css/especificidad.html">Especificidad</a>
+                        <a href="ejemplos/css/avanzado.html">Avanzado</a>
+
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">HTML</a>
+                    <div class="dropdown-content">
+                        <a href="ejemplos/html/box-model.html">Box-Model</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">javascript</a>
+                    <div class="dropdown-content">
+
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Utilidades</a>
+                    <div class="dropdown-content">
+                        <a href="https://caniuse.com/">caniuse</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="parallax">
-        <h1>Prueba Técnica hola</h1>
+        <h1>Prueba Técnica Juan Carlos</h1>
         <h2>HTML</h2>
     </div>
-
-    <nav>
-        <a href="/ejemplos/css/animaciones.html">Animaciones</a>
-    </nav>
-
-
 
     <h3>Voluntario <span id="nombre"></span></h3>
     <button onclick="buscarVoluntario()">¿Quien lee?</button>
@@ -30,6 +62,7 @@
     <div class="tabla">
         <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table">Ejemplo w3schools</a>
         <table>
+            <caption>Alumnos de clase Java</caption>
             <tr>
                 <td colspan="2">Ander</td>
             </tr>

@@ -1,0 +1,127 @@
+<!DOCTYPE html> <!-- html5 -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel=”shortcut icon” type=”image/png” href=”/favicon.png”/>
+  <title>Titul pestaña</title>
+
+  <base href="/repasoHTML/">
+  <!-- estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1 class="logo"></h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#images">Imagenes</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Landing Area -->
+    <div id="landing">
+      <div id="landing-text">
+        <div id="landing-text-inner">
+          <h1>HTML</h1>
+          <h2>Repaso a las etiquetas HTML</h2>
+          <a href="#images" class="btn" id="view-work">
+            Ver etiquetas
+          </a>
+          <a href="#videos" class="btn" id="view-work">
+            Ver tutoriales
+          </a>
+        </div>
+      </div>
+      <div id="landing-image"></div>
+    </div>
+
+    <div id="images">
+      <div id="header">
+        <h2>Etiquetas</h2>
+      </div>
+
+      <img src="images/html5-cheat-sheet.png" alt="Imagen con las etiquetas HTML">
+      <div class="caption">
+        <h3>Photo One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+
+      <ol>
+        <li>punto uno</li>
+        <li>punto dos</li>
+        <li>punto tres</li>
+      </ol>
+
+      <ul>
+        <li>punto uno</li>
+        <li>punto dos</li>
+        <li>punto tres</li>
+      </ul>
+
+      <p>Cryptids of Cornwall:</p>
+
+      <dl>
+          <dt>Beast of Bodmin</dt>
+          <dd>A large feline inhabiting Bodmin Moor.</dd>
+      
+          <dt>Morgawr</dt>
+          <dd>A sea serpent.</dd>
+      
+          <dt>Owlman</dt>
+          <dd>A giant owl-like creature.</dd>
+      </dl>
+
+      <p>Tráfico generado: <meter min="100" max="5000" low="1000" high="4100" optimum="3500" value="2154"></meter></p>
+
+      <progress value="70" max="100">70 %</progress>
+
+    </div>
+
+
+    <div id="videos">
+      <div id="header">
+        <h2>Tutoriales HTML</h2>
+      </div>
+
+      <iframe width="100%" height="540" src="https://www.youtube.com/embed/XsEnj-1hG2o" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="caption">
+        <h3>Photo One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <div id="contacto">
+      <h3>Contacta</h3>
+      <p>Email</p>
+      <p>Email:
+        <strong>contact@acmephotos.test</strong>
+      </p>
+      <p>Telefono:
+        <strong>(617) 555-5555</strong>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
