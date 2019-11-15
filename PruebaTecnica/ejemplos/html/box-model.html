@@ -25,7 +25,7 @@
         }
 
         p {
-            border: 3px solid blueviolet;
+
             padding: 5px;
         }
 
@@ -54,6 +54,13 @@
             text-align: center;
         }
 
+        .box-texto {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 3px solid blueviolet;
+        }
+
         section {
             border: 1px solid rgb(131, 131, 131);
             background-color: ghostwhite;
@@ -67,10 +74,10 @@
         }
     </style>
 
-
-    <h1>Toda etiqueta de HTML tiene una estructura de caja</h1>
+    <h1>Visualizacion</h1>
 
     <section>
+        <h2>Toda etiqueta de HTML tiene una estructura de caja</h2>
         <h2>Display</h2>
         <a href="index.html">Volver</a>
 
@@ -106,14 +113,59 @@
     </section>
 
     <section>
-        <h2>Overflow</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio odit ullam incidunt blanditiis in maxime ea
-            atque
-            distinctio omnis molestias officia rerum, quia aliquam, quasi magni possimus nihil repudiandae?
-            Consequuntur.
-        </p>
+        <h2>Visibility</h2>
+        <p>Existen dos formas de ocultar elementos de html</p>
+        <!-- Se oculta pero respeta el espacio -->
+        <p>Usando <code>visibility</code></p>
+        <div class="box">1</div>
+        <div class="box" style="visibility:hidden">2</div>
+        <div class="box">3</div>
+
+        <!-- Se oculta y no ocupa espacio -->
+        <p>Usando <code>dislay:none</code></p>
+        <div class="box">1</div>
+        <div class="box" style="display:none">2</div>
+        <div class="box">3</div>
     </section>
 
+    <section>
+        <h2>Overflow</h2>
+        <p> Como se muestra los elementos cuando no entran en el contenedor padre
+            <code>[ visible | hidden | scroll | auto ]</code> </p>
+        <p>Tambien se puede usar <code>overflow-x</code> y <code>ovyrflow-y</code></p>
+        <div class="box-texto" style="overflow: hidden;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt laudantium ipsam facere explicabo in
+                adipisci sed autem aliquid aspernatur magni neque, dolorem maiores! Quos praesentium dolorem inventore
+                tenetur dolorum nam!</p>
+        </div>
+        <div class="box-texto" style="overflow: scroll;">
+            <p>Optio mollitia impedit dolore odio quisquam nisi perferendis autem provident aspernatur sit, voluptates
+                inventore et quia repellendus assumenda nesciunt officia voluptatem, harum est saepe pariatur
+                consequatur! Ea eum quos veniam.</p>
+        </div>
+        <div class="box-texto" style="overflow: auto;">
+            <p>Cumque modi qui suscipit at autem perferendis ullam tempore cum, culpa asperiores. Pariatur numquam
+                provident velit facere quo vitae! Accusamus pariatur quaerat officia molestias ad fugit natus et
+                dignissimos tempore!</p>
+        </div>
+        <div class="box-texto" style="overflow: visible;">
+            <p>Eos fugit laboriosam aut delectus, officiis corporis. Officiis, molestiae laborum culpa quis impedit
+                minima eligendi fugit, unde nemo quae facere! Cumque laborum alias possimus, voluptas qui iste saepe ad
+                eveniet.</p>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Z-index</h2>
+        <p>Se encarga de la profundidad de los elementos cuando se solapan</p>
+
+        <div class="box"
+            style="background-color: chartreuse; position: relative; left: 278px; bottom: 22px; z-index: 2;">1</div>
+        <div class="box" style="z-index: 0;position: relative; top:-20px; left:20px; background-color: brown;">2</div>
+        <div class="box" style="z-index: 1;position: relative;">3</div>
+
+    </section>
 
 </body>
 
