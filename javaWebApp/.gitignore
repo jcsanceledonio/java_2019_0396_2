@@ -1,8 +1,10 @@
+**/node_modules
 
 #eclipse
 **.project
 **.settings
 **.classpath
-**/target
+**/target/
 **/.settings
-**/.metadata
+**/.metadata/
+**/servers/

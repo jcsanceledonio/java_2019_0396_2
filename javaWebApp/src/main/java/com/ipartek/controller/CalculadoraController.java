@@ -13,30 +13,59 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/sumar")
 public class CalculadoraController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// recibir parametros del formulario, siempre formato String
+		String operacion = request.getParameter("operacion");
 		String num1 = request.getParameter("op1");
 		String num2 = request.getParameter("op2");
-		
-		String resultado="";
-		//Realizar calculos
-		int numero1 =0;
-		int numero2 =0;
+		float resultado = 0;
+
 		try {
-			numero1 = Integer.parseInt(num1);
-			numero2 = Integer.parseInt(num2);
-			resultado = "El resultado de la suma de "+numero1+" y "+numero2+" es: "+String.valueOf(numero1+numero2);
+			
+			// realizar calculos
+			float n1 = Float.valueOf(num1);
+			float n2 = Float.valueOf(num2);
+
+			switch (operacion) {
+			case "1":
+				resultado = n1 + n2;
+				break;
+			case "2":
+				resultado = n1 - n2;
+				break;
+			case "3":
+				resultado = n1 * n2;
+				break;
+			case "4":
+				resultado = n1 / n2;
+				break;
+
+			default:
+				break;
+			}
+
+			// enviar datos a la vista
+			request.setAttribute("op1", num1);
+			request.setAttribute("op2", num2);
+			request.setAttribute("resultado", resultado);
+
 		} catch (NumberFormatException e) {
-			resultado ="Error, ¿Que coño haces? tienes que meter numeros puto";
+			request.setAttribute("resultado", 0);
+			request.setAttribute("mensaje", "Lo sentimos pero solo sabemos sumar numeros");
+
+		} finally {
+
+			// ir a vista
+			request.getRequestDispatcher("resultado.jsp").forward(request, response);
+
 		}
 
-		//enviar datos a la vista
-		request.setAttribute("resultado", resultado);
-		request.getRequestDispatcher("resultado.jsp").forward(request, response);
-			
 	}
 
 }

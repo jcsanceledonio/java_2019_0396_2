@@ -1,1 +1,11 @@
-/.metadata/
+**/node_modules
+
+#eclipse
+**.project
+**.settings
+**.classpath
+**/target/
+**/.settings
+**/.metadata/
+**/servers/
+/.recommenders/

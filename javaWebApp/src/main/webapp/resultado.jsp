@@ -11,10 +11,27 @@
 <h1>Resultado</h1>
 
 <%
-	String resultado = (String)request.getAttribute("resultado");	
+	//recibir atributos del controlador
+	String mensaje = (String)request.getAttribute("mensaje");
+	String operacion = (String)request.getAttribute("operacion");
+	String op1 = (String)request.getAttribute("op1");
+	String op2 = (String)request.getAttribute("op2");
+	float resultado = (float)request.getAttribute("resultado");
+	
+	
+	if (mensaje != null) {
 %>
 
-<p><%=resultado%></p>
+	<p style="color:red;"><%=mensaje%></p>
+
+<% }else { %>
+
+	<p>El resultado es de sumar <%=op1%> mas <%=op2%> es igual a <%=resultado%></p>
+	
+
+	<p>la operacion <%=operacion%></p>
+<% } // final del if %>	
+<a href="calculadora.jsp">Volver a Calcular</a>
 
 </body>
 </html>

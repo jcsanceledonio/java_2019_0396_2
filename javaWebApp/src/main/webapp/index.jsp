@@ -1,62 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+   
+<%@include file="includes/header.jsp" %>
+<%@include file="includes/navigation.jsp" %>
+ 
+ <div class="parallax">
+        <h1>Prueba Técnica Juan Carlos</h1>
+        <h2>HTML, CSS, JAVASCRIPT</h2>
+    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <main>
+        <br>
+        <div class="tabla">
+            <table>
+                <caption>Alumnos de clase Ipartek</caption>
+                <tr>
+                    <td colspan="2">Ander(Profesor)</td>
+                </tr>
+                <tr>
+                    <td>Mikel</td>
+                    <td>Joseba</td>
+                </tr>
+                <tr>
+                    <td>Nadie</td>
+                    <td>Raul</td>
+                </tr>
+                <tr>
+                    <td>Erlantz</td>
+                    <td>Cristian</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>Alejandro</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>Juan Carlos</td>
+                </tr>
+                <tr>
+                    <td>Kiryl</td>
+                    <td>Iñigo</td>
+                </tr>
+                <tr>
+                    <td>nadie</td>
+                    <td>Endika</td>
+                </tr>
+                <tr>
+                    <td>Iker</td>
+                    <td>Aitor</td>
+                </tr>
 
-    <!-- la base para contruir todas las rutas de esta pagina -->
-    
-    <link rel="stylesheet" href="css/login.css">
-
-
-</head>
-
-<body>
-
-    <style>
-
-    </style>
-
-
-
-    <form action="#" method="post">
-        <h1>Login</h1>
-
-        <div class="imgcontainer">
-            <img src="images/customer-login-icon-27.jpg" alt="Avatar" class="avatar">
+            </table>
+            <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table">Ejemplo
+                w3schools</a>
         </div>
+        <h3>Voluntario <span id="nombre"></span></h3>
+        <button onclick="buscarVoluntario()">¿Quien lee?</button>
 
-        <label for="nombre"><b>Username</b></label>
-        <input type="text" placeholder="Introducir nombre de usuario" name="nombre" id="nombre" autofocus required
-            pattern=".{3,11}">
+        <a id="btnUp" href="#"><i class="material-icons">
+                keyboard_arrow_up
+            </i></i></a>
 
-        <label for="contrasena"><b>Password</b></label>
-        <input type="password" placeholder="introducir la contraseña" name="contrasena" id="contrasena" autofocus
-            required pattern=".{3,11}">
-
-        <br><br>
-
-        <label for="idioma"><b>Idioma:</b></label>
-        <select name="idioma" id="idioma">
-            <option value="en">Inglés</option>
-            <option value="es" selected>Español</option>
-            <option value="fr">Francés</option>
-        </select>
-        <br><br>
-
-        <button type="submit">Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="recuerdame"> Recuerdame
-        </label>
-        <br>
-        <br>
-        <a class="cancelbtn" href="index.html">Volver</a>
-        <a href="calculadora.jsp">Calculadora</a>
-    </form>
-
-</body>
-
-</html>
+    </main>
+    
+    <%@include file="includes/footer.jsp" %>
