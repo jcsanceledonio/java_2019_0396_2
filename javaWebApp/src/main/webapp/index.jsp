@@ -1,3 +1,4 @@
+<%String titulo = "HelloWeb | inicio";%>
    
 <%@include file="includes/header.jsp" %>
 <%@include file="includes/navigation.jsp" %>
@@ -12,6 +13,7 @@
         <div class="tabla">
             <table>
                 <caption>Alumnos de clase Ipartek</caption>
+               
                 <tr>
                     <td colspan="2">Ander(Profesor)</td>
                 </tr>
@@ -52,8 +54,10 @@
             <a target="_blank" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table">Ejemplo
                 w3schools</a>
         </div>
-        <h3>Voluntario <span id="nombre"></span></h3>
+        <h3>Voluntario <span id="nombre"> </span></h3>
         <button onclick="buscarVoluntario()">¿Quien lee?</button>
+        
+         <i class="fas fa-eye fa-2x"></i>
 
         <a id="btnUp" href="#"><i class="material-icons">
                 keyboard_arrow_up

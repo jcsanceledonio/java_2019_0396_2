@@ -11,6 +11,10 @@ esto es un comentario de bloque
     margin: 0;
     padding: 0;
 }
+/* @import url("reset.css"); */
+/* Normaliza los estilos */
+@import url("normalize.css"); 
+/* @import url("print.css") print; */
 
 /* 
 orden CSS
@@ -66,6 +70,12 @@ td:hover {
     background-color: rgb(24, 123, 236);
 }
 
+/*Icono del ojo*/
+.fa-eye{
+	color:red;
+	
+}
+
 /* -------------------------------------- */
 
 /* Formulario */
@@ -83,7 +93,7 @@ input[type="text"]:invalid {
 /* ----------------------------------------- */
 
 .parallax {
-    background-image: url(images/office.jpg);
+    background-image: url(/helloweb/images/office.jpg);
     /* Create the parallax scrolling effect */
     height: 500px;
     background-attachment: fixed;
