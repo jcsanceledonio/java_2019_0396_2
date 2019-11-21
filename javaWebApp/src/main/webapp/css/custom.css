@@ -1,0 +1,28 @@
+/*Icono del ojo*/
+
+.fa-eye {
+    color: red;
+}
+
+/* -------------------------------------- */
+
+#btnUp {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(5, 125, 165);
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: background 0.25s;
+}
+
+#btnUp:active {
+    background: rgb(4, 80, 105);
+}

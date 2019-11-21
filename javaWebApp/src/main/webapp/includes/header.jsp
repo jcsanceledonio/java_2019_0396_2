@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html> <!-- html5 -->
 <html lang="es">
 
@@ -13,7 +14,6 @@
     <base href="/helloweb/">
     <!-- estilos -->
     <link rel="stylesheet" href="css/styles.css?time=<%=System.currentTimeMillis()%>">
-
 </head>
 
 <body>
