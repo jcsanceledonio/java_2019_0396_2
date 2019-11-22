@@ -6,7 +6,7 @@ esto es un comentario de bloque
 @tags: css, basic, etc...
 @licencia mit
  */
- 
+
 /* 
 orden CSS
 1. Reset
@@ -18,14 +18,21 @@ orden CSS
  */
 
 /* Resetea los estilos */
-/* @import url("reset.css"); */
+
+@import url("reset.css");
+
 /* Normaliza los estilos */
+
 @import url("normalize.css");
 /* Estilos generales */
+
 @import url("etiquetas.css");
 @import url("animaciones.css");
 @import url("layouts.css");
-@import url("clases.css");
 @import url("custom.css");
+/* @media querys */
+
+@import url("media.css");
 /* Estilos para la impresion */
+
 @import url("print.css") print;

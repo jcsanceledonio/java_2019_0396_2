@@ -1,0 +1,9 @@
+   /* Media querys */
+
+   /* media query para que el boton que sube a arriba de la pagina desaparezca en la pantallas grandes */
+
+   @media screen and (max-width: 425px) {
+       #btnUp {
+           display: flex;
+       }
+   }
