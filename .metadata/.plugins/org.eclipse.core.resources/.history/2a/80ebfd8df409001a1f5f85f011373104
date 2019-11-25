@@ -1,0 +1,5 @@
+hola
+
+<%
+out.print("<p>esto es java</p>");
+%>
