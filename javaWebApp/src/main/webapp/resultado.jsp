@@ -18,7 +18,6 @@
 	String op2 = (String)request.getAttribute("op2");
 	float resultado = (float)request.getAttribute("resultado");
 	
-	
 	if (mensaje != null) {
 %>
 

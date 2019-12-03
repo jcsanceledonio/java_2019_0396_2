@@ -9,7 +9,6 @@
 	<h2>HTML, CSS, JAVASCRIPT</h2>
 </div>
 <%@include file="includes/navigation.jsp"%>
-<main>
 
 	<table>
 		<caption>Alumnos de clase Ipartek</caption>
@@ -57,7 +56,7 @@
 	<h3>
 		Voluntario <span id="nombre"> </span>
 	</h3>
-	<button onclick="buscarVoluntario()">ï¿½Quien lee?</button>
+	<button onclick="buscarVoluntario()">Quien lee?</button>
 
 	<i class="fas fa-eye fa-2x"></i>
 
@@ -68,7 +67,6 @@
 
 
 	<a id="btnUp" href="#"><i class="material-icons">
-			keyboard_arrow_up </i></i></a>
-</main>
+			keyboard_arrow_up </i></a>
 
 <%@include file="includes/footer.jsp"%>
