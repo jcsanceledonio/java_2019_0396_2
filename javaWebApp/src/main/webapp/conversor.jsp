@@ -1,4 +1,5 @@
 
+<%@page import="com.ipartek.controller.ConversorController"%>
 <%String titulo = "HelloWeb | Conversor";%>
 
 <%@include file="/includes/header.jsp"%>
@@ -7,6 +8,8 @@
 	<form action="convertir" method="post">
 	
 		<h1>Convertir de metros a millas</h1>
+		
+		<p>un metro equivale a <%=ConversorController.METROS_PIES %> pies</p>
 	
 		<input type="text" name="metros" value="${metros}" placeholder="Escribe los metros"/>
 		

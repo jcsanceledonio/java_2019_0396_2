@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/convertir")
 public class ConversorController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	public static final float METROS_PIES = 3.281f;
        
 
 	/**
@@ -45,7 +46,7 @@ public class ConversorController extends HttpServlet {
 				float metrosFloat = Float.valueOf(metros);
 				
 				if (metrosFloat >= 0) {
-					conversion = metrosFloat *3.281f;
+					conversion = metrosFloat * METROS_PIES;
 				}else {
 					mensaje = "Introduce un numero mayor o igual a 0";
 				}

@@ -20,7 +20,7 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="ejemplos/html/box-model.jsp">VisualizaciÃ³n</a>
+                <a href="ejemplos/html/box-model.jsp">Visualización</a>
                 <a href="ejemplos/html/posicionamiento.jsp">Posicionamiento</a>
                 <a href="ejemplos/html/formulario.jsp">Formularios</a>
                 <a href="login.jsp">Login</a>
