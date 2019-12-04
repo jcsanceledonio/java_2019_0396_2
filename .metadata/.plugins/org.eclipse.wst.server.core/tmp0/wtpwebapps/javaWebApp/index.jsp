@@ -10,6 +10,11 @@
 </div>
 <%@include file="includes/navigation.jsp"%>
 
+<a href="introduccion-jsp.jsp">Introduccion a JSP</a>
+<a href="hello">Introduccion Servlet</a>
+<a href="hello?nombre=admin&password=1234">Introduccion Servlet con usuario</a>
+<a href="hello?nombre=tetera&password=1234">Introduccion Servlet tetera</a>
+
 	<table>
 		<caption>Alumnos de clase Ipartek</caption>
 
